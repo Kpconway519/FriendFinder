@@ -1,0 +1,613 @@
+<!Doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId">
+        <li class="nav-item">
+            <a href="/" class="nav-link active">Home Page</a>
+        </li>
+        <li class="nav-item">
+            <a href="/survey" class="nav-link">Survey</a>
+        </li>
+    </ul>
+
+    <div class="jumbotron">
+        <h1 class="display-3">Friend Finder</h1>
+        <p class="lead">Just take the survey below and you're on your way!</p>
+        <hr class="my-2">
+        <p>Answer all question on a scale of one to 5, with 5 strongly agree and 1 being strongly disagree</p>
+    </div>
+
+    <div class="form-group">
+        <label for=""></label>
+        <input type="text" class="form-control" name="userName" id="userName" aria-describedby="helpId" placeholder="Please enter your name">
+        <small id="helpId" class="form-text text-muted">Enter your name here</small>
+    </div>
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 1</h4>
+            <p class="card-text">I would love to go see a Classical music concert.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q1button" id="q1option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q1button" id="q1option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q1button" id="q1option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q1button" id="q1option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q1button" id="q1option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 2</h4>
+            <p class="card-text">Pizza is my favorite food</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q2button" id="q2option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q2button" id="q2option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q2button" id="q2option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q2button" id="q2option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q2button" id="q2option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 3</h4>
+            <p class="card-text">The moon landings were faked.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q3button" id="q3option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q3button" id="q3option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q3button" id="q3option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q3button" id="q3option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q3button" id="q3option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 4</h4>
+            <p class="card-text">It is possible to cross the ocean in a styrofoam cooler.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q4button" id="q4option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q4button" id="q4option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q4button" id="q4option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q4button" id="q4option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q4button" id="q4option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 5</h4>
+            <p class="card-text">We should go back to the gold standard.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q5button" id="q5option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q5button" id="q5option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q5button" id="q5option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q5button" id="q5option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q5button" id="q5option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 6</h4>
+            <p class="card-text">Red wine is the best wine</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q6button" id="q6option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q6button" id="q6option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q6button" id="q6option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q6button" id="q6option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q6button" id="q6option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 7</h4>
+            <p class="card-text">Dogs are better than cats.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q7button" id="q7option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q7button" id="q7option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q7button" id="q7option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q7button" id="q7option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q7button" id="q7option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 8</h4>
+            <p class="card-text">I love seafood.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q8button" id="q8option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q8button" id="q8option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q8button" id="q8option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q8button" id="q8option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q8button" id="q8option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 9</h4>
+            <p class="card-text">I've already lived the best day of my life.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q9button" id="q9option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q9button" id="q9option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q9button" id="q9option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q9button" id="q9option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q9button" id="q9option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <div class="card text-left">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Question 10</h4>
+            <p class="card-text">I save my receipts.</p>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q10button" id="q10option1" value="1">
+                1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q10button" id="q10option2" value="2">
+                2
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q10button" id="q10option3" value="3">
+                3
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q10button" id="q10option4" value="4">
+                4
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="q10button" id="q10option5" value="5">
+                5
+            </label>
+        </div>
+
+    </div>
+
+    <button type="button" name="submitButton" id="submitButton" class="btn btn-primary btn-lg btn-block">Click Here To
+        Find Friends</button>
+
+
+
+    <script>
+        //this is gonna take the Username, and all the answers to the questions, plus a pre-chosen avatar picture and put it together into a nice object, .
+        let allFriends = [];
+        let answerValues = [];
+
+
+        $.ajax({ url: "/api/friends", method: "GET" })
+            .then(function (resultArray) {
+                console.log(resultArray)
+                allFriends = resultArray
+            })
+
+        $("#submitButton").on("click", function (event) {
+            event.preventDefault();
+
+            let name = $("#userName").val().trim()
+            //convert each user's results into an array of numbers
+            let q1answers = document.getElementsByName("q1button")
+            let q2answers = document.getElementsByName("q2button")
+            let q3answers = document.getElementsByName("q3button")
+            let q4answers = document.getElementsByName("q4button")
+            let q5answers = document.getElementsByName("q5button")
+            let q6answers = document.getElementsByName("q6button")
+            let q7answers = document.getElementsByName("q7button")
+            let q8answers = document.getElementsByName("q8button")
+            let q9answers = document.getElementsByName("q9button")
+            let q10answers = document.getElementsByName("q10button")
+
+
+            for (i = 0; i < q1answers.length; i++) {
+                if (q1answers[i].checked == true) {
+                    let firstAnswer = q1answers[i].value
+                    answerValues.push(firstAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q2answers.length; i++) {
+                if (q2answers[i].checked == true) {
+                    let secondAnswer = q2answers[i].value
+                    answerValues.push(secondAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q3answers.length; i++) {
+                if (q3answers[i].checked == true) {
+                    let thirdAnswer = q3answers[i].value
+                    answerValues.push(thirdAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q4answers.length; i++) {
+                if (q4answers[i].checked == true) {
+                    let fourthAnswer = q4answers[i].value
+                    answerValues.push(fourthAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q5answers.length; i++) {
+                if (q5answers[i].checked == true) {
+                    let fifthAnswer = q5answers[i].value
+                    answerValues.push(fifthAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q6answers.length; i++) {
+                if (q6answers[i].checked == true) {
+                    let sixthAnswer = q6answers[i].value
+                    answerValues.push(sixthAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q7answers.length; i++) {
+                if (q7answers[i].checked == true) {
+                    let seventhAnswer = q7answers[i].value
+                    answerValues.push(seventhAnswer)
+
+                }
+            }
+
+
+            for (i = 0; i < q8answers.length; i++) {
+                if (q8answers[i].checked == true) {
+                    let eighthAnswer = q8answers[i].value
+                    answerValues.push(eighthAnswer)
+
+                }
+            }
+
+            for (i = 0; i < q9answers.length; i++) {
+                if (q9answers[i].checked == true) {
+                    let ninthAnswer = q9answers[i].value
+                    answerValues.push(ninthAnswer)
+                }
+            }
+
+            for (i = 0; i < q10answers.length; i++) {
+                if (q10answers[i].checked == true) {
+                    let tenthAnswer = q10answers[i].value
+                    answerValues.push(tenthAnswer)
+                }
+            }
+            //compare the content of answerValues to the arrays of the other friends, run it through a code and produce the result which is closest to the inputted results. 
+
+            //I think I could just subtract the first number from the first, take absolute value and add it up until I get a final number. If there are more than one matches, just pick the first one.
+            let finalDifference = 0;
+            let finalArray = [];
+            let loopThenResult = function(callback) {
+
+                // this loops through the allFriends array which holds the friends already created.
+                for (j = 0; j < allFriends.length; j++) {
+                    //difference array is meant to find the difference between friends and the users' responses
+                    let diffArray = [];
+                    //this is a loop within a loop. the first loop is the allFriends array which holds the things you want to compare user responses against--this loop uses "j". The inner loop is one that loops through the 10 responses the user submitted and compares to the 10 from friend[j]. 
+                    for (i = 0; i < answerValues.length; i++) {
+                        let totalDifference = 0;
+                        diffArray.push(allFriends[j].scores[i] - answerValues[i])
+                    }
+                    if (diffArray.length = 10) {
+                        console.log(diffArray)
+                        let personalityDiff = 0;
+                        for (k = 0; k < diffArray.length; k++) {
+                            //take the absolute value of each number and add them all up.
+                            finalDifference += Math.abs(diffArray[k]) + personalityDiff;
+                        }
+                        //stopping point. Last thing I need to do is to compare the two absolute values and find out how to do a pop-up modal to display the result.
+                        //something like this: put all the finalDifferences into an array. Which ever number in the array is lowest, that index corresponds to the index of the person in the allFriends array
+                        finalArray.push(finalDifference)
+                    }
+                } //end of the allFriends loop
+                
+                ///////////////////////////
+                function indexOfSmallest(a) {
+                 var lowest = 0;
+                 for (var m = 1; m < a.length; m++) {
+                  if (a[m] < a[lowest]) lowest = m;
+                 }
+                 return lowest;
+                }
+                ///////////////////////////
+                console.log(finalArray)
+            //this is what is messing up!!!!!!!!!!!!!!!!!!!!!
+                var lowestNumIndex = indexOfSmallest(finalArray);
+                console.log(lowestNumIndex)
+            
+
+
+                callback(lowestNumIndex)
+            }
+            
+                loopThenResult(function(index) {
+                    console.log(index)
+                    // it says undefined. I think this is an async issue. need to get all that stuff sorted
+                    alert("Congratulations, " + name + ", your closest match is: " + allFriends[index].name)
+                    
+                })
+        })
+
+    </script>
+
+</body>
+
+</html>
