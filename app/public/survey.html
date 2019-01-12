@@ -573,13 +573,12 @@
                             //take the absolute value of each number and add them all up.
                             finalDifference += Math.abs(diffArray[k]) + personalityDiff;
                         }
-                        //stopping point. Last thing I need to do is to compare the two absolute values and find out how to do a pop-up modal to display the result.
-                        //something like this: put all the finalDifferences into an array. Which ever number in the array is lowest, that index corresponds to the index of the person in the allFriends array
+                        //push the final answers into a holder array.
                         finalArray.push(finalDifference)
                     }
                 } //end of the allFriends loop
                 
-                ///////////////////////////
+                //I got this function from: https://blogs.msdn.microsoft.com/oldnewthing/20140526-00/?p=903
                 function indexOfSmallest(a) {
                  var lowest = 0;
                  for (var m = 1; m < a.length; m++) {
@@ -588,8 +587,8 @@
                  return lowest;
                 }
                 ///////////////////////////
+                
                 console.log(finalArray)
-            //this is what is messing up!!!!!!!!!!!!!!!!!!!!!
                 var lowestNumIndex = indexOfSmallest(finalArray);
                 console.log(lowestNumIndex)
             
@@ -600,7 +599,6 @@
             
                 loopThenResult(function(index) {
                     console.log(index)
-                    // it says undefined. I think this is an async issue. need to get all that stuff sorted
                     alert("Congratulations, " + name + ", your closest match is: " + allFriends[index].name)
                     
                 })
