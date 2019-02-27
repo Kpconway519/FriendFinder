@@ -12,7 +12,23 @@
 </head>
 
 <body>
+<style>
+.friendModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  padding-left: 100px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+</style>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
@@ -442,8 +458,41 @@
         Find Friends</button>
 
 
+<!-- Area for the Modal -->
+
+<!-- Modal content -->
+
+<div id="friendModal" class="friendModal">
+
+  <!-- Modal content -->
+  <div class="friendModal-content">
+    <span class="close">&times;</span>
+    <p id="friend-modal-text" style="color: whitesmoke"></p>
+    <img id="friendImg"src="" alt="" style="padding-left: 30px">
+  </div>
+
+</div>
+
+
+
 
     <script>
+
+        // Area for the modal logic:
+            var friendModal = document.getElementById('friendModal');
+           
+            // Get the <span> element that closes the friendModal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks on <span> (x), close the friendModal
+            span.onclick = function() {
+            friendModal.style.display = "none";
+            }
+            // When the user clicks anywhere outside of the friendModal, close it
+            window.onclick = function(event) {
+            if (event.target == friendModal) {
+                friendModal.style.display = "none";
+              }
+            }
         //this is gonna take the Username, and all the answers to the questions, plus a pre-chosen avatar picture and put it together into a nice object, .
         let allFriends = [];
         let answerValues = [];
@@ -552,7 +601,7 @@
             }
             //compare the content of answerValues to the arrays of the other friends, run it through a code and produce the result which is closest to the inputted results. 
 
-            //I think I could just subtract the first number from the first, take absolute value and add it up until I get a final number. If there are more than one matches, just pick the first one.
+
             let finalDifference = 0;
             let finalArray = [];
             let loopThenResult = function(callback) {
@@ -599,8 +648,16 @@
             
                 loopThenResult(function(index) {
                     console.log(index)
-                    alert("Congratulations, " + name + ", your closest match is: " + allFriends[index].name)
-                    
+                    // alert()
+                    var friendText = document.getElementById('friend-modal-text');
+                    var friendImg = document.getElementById('friendImg');
+
+                    friendText.innerHTML = ("Congratulations, " + name + ", your closest match is: " + allFriends[index].name)
+                    friendModal.style.backgroundColor = 'rgba(0,0,0,0.4)';
+                    friendImg.setAttribute("src", `https://placekitten.com/200/300`)
+
+                    friendModal.style.display = "block";
+
                 })
         })
 
